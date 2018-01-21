@@ -1,9 +1,52 @@
 body {
   background: url(../images/bcg.png);
+  color: #4e4e4e;
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande',
+    sans-serif;
 }
 
 .wrapper {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
+}
+
+.header {
+  margin-top: 60px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.header p:last-child {
+  margin-top: 30px;
+  text-decoration: underline;
+}
+
+/* .bar {
+  width: 50%;
+} */
+
+.bar img {
+  width: 150px;
+  padding: 60px 0 0 100px;
+  position: absolute;
+}
+
+.person img {
+  width: 10%;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 96px;
+}
+
+#head {
+}
+
+#left-arm {
 }
