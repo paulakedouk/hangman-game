@@ -62,10 +62,16 @@ h1 {
   color: white;
 }
 
+#empty-line {
+  font-size: 50px;
+  color: #4e4e4e;
+  margin-top: 30px;
+}
+
 .letters {
   width: 60%;
   float: right;
-  margin-top: 100px;
+  margin-top: 80px;
   display: flex;
 }
 
