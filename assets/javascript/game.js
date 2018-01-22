@@ -1,5 +1,18 @@
-// var canvas = document.getElementById('canvas');
-// var ctx = canvas.getContext('2d');
-// var image = document.getElementById('bar');
+// Bar body
 
-// ctx.drawImage(image, 33, 71, 104, 124, 21, 20, 87, 104);
+var animals = ['cat', 'dog', 'bird', 'butterfly'];
+
+var selectedIndex = 0;
+
+// Function to render name
+function showWord() {
+  //   for (var i in animals) {
+  //     console.log(animals[i].length);
+  //   }
+  selectedIndex = Math.floor(Math.random() * animals.length);
+
+  console.log(animals[selectedIndex], animals[selectedIndex].length);
+}
+
+// Calling functions to start the game.
+showWord();
