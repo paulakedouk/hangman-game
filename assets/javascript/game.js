@@ -1,6 +1,6 @@
 // Bar body
 
-var animals = ['cat', 'dog', 'bird', 'butterfly'];
+var animals = ['cat', 'tiger', 'bird', 'butterfly'];
 var alphabet = 'abcdefghijklmnopqrstuvwxyz';
 var alphabetArray = alphabet.split('');
 
@@ -36,24 +36,38 @@ function showLetters() {
 
 showLetters();
 
-function showWord() {
-  selectedIndex = Math.floor(Math.random() * animals.length);
-  // console.log(animals[selectedIndex], animals[selectedIndex].length);
+selectedIndex = Math.floor(Math.random() * animals.length);
+var splitWord = animals[selectedIndex].split('');
+var name = animals[selectedIndex];
 
-  console.log(animals[selectedIndex]);
+console.log(splitWord);
+console.log(name);
 
-  for (var i in animals[selectedIndex]) {
-    //var letters = animals[i].split('');
+function emptyLines() {
+  for (var i = 0; i < splitWord.length; i++) {
     document.querySelector('#empty-line').innerHTML += '_ ';
   }
-  0;
 }
+
+emptyLines();
 
 document.onkeyup = function(event) {
   // When key was pressed
   var userInput = event.key;
-  console.log(userInput);
+
+  for (var i in splitWord) {
+    if (userInput === splitWord[i]) {
+      console.log('This letter match!');
+
+      splitWord.indexOf(userInput);
+    } else {
+      // Delete the letter and loose one life
+      console.log('No match');
+      emptyLines();
+    }
+  }
+
+  // console.log(animals[selectedIndex], animals[selectedIndex].length);
 };
 
-// Calling functions to start the game.
-showWord();
+// emptyLines();

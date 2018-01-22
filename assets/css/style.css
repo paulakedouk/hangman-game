@@ -33,16 +33,16 @@ h1 {
 }
 
 .bar img {
-  width: 150px;
-  padding: 60px 0 0 100px;
+  width: 180px;
+  padding: 60px 0 0 90px;
   position: absolute;
 }
 
 .person img {
-  width: 10%;
+  width: 100px;
   position: absolute;
-  margin-top: 50px;
-  margin-left: 96px;
+  margin-top: 60px;
+  margin-left: 125px;
 }
 
 .name {
