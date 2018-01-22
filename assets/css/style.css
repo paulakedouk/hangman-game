@@ -68,14 +68,18 @@ h1 {
   margin-top: 30px;
 }
 
-.letters {
+#btn-letters {
   width: 60%;
   float: right;
-  margin-top: 80px;
-  display: flex;
 }
 
-.letter {
+#alphabet {
+  margin-top: 40px;
+}
+
+#letter {
+  float: left;
+  margin: 0 10px 10px 0;
   border-radius: 50%;
   background: #a5c4d8;
   width: 40px;
@@ -84,4 +88,5 @@ h1 {
   text-align: center;
   line-height: 40px;
   margin-left: 10px;
+  text-transform: uppercase;
 }
