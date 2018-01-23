@@ -1,12 +1,12 @@
 // Bar body
 
-var animals = ['cat', 'tiger', 'bird', 'butterfly'];
+var animals = ['cat', 'dog', 'lion', 'monkey', 'zebra', 'tiger', 'bird', 'butterfly'];
 var alphabet = 'abcdefghijklmnopqrstuvwxyz';
 var alphabetArray = alphabet.split('');
 
 var wins = 0;
 var loss = 0;
-var guessLeft = 9;
+var guessLeft = 6;
 var line = [];
 var rigthLetter = [];
 var wrongLetter = [];
@@ -31,7 +31,7 @@ function startGame() {
 
   // Reset
   wrongLetter = [];
-  guessLeft = 9;
+  guessLeft = 6;
 }
 
 function finishGame() {
