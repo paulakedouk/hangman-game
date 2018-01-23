@@ -11,9 +11,10 @@ var line = [];
 var rigthLetter = [];
 var wrongLetter = [];
 var randomWord;
+var winCounter = 0;
 
 // DOM Manipulation
-var holdWord = document.getElementById('hold');
+var emptyLine = document.getElementById('empty-line');
 var randomWord = animals[Math.floor(Math.random() * animals.length)];
 console.log(randomWord);
 
@@ -33,6 +34,14 @@ function startGame() {
   document.getElementById('guess-left').textContent = guessLeft;
 }
 
+function finishGame() {
+  if (winCounter === randomWord.length) {
+    alert('You got it!');
+  } else if (guessLeft === 0) {
+    alert('Loser!');
+  }
+}
+
 document.onkeyup = function(event) {
   // When key was pressed
   var userGuess = event.key;
@@ -42,11 +51,16 @@ document.onkeyup = function(event) {
       if (randomWord[i] === userGuess) {
         line[i] = userGuess;
         console.log(line);
+        emptyLine.innerHTML = line;
+        winCounter++;
+        finishGame();
       }
     }
   } else {
     wrongLetter.push(userGuess);
+    guessLeft--;
     console.log(wrongLetter);
+    finishGame();
   }
 };
 
