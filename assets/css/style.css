@@ -62,10 +62,15 @@ h1 {
   color: white;
 }
 
+#hold {
+  display: flex;
+  justify-content: center;
+}
+
 #empty-line {
   font-size: 50px;
   color: #4e4e4e;
-  margin-top: 30px;
+  margin: 30px 10px;
 }
 
 #btn-letters {
