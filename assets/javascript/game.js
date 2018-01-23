@@ -15,8 +15,11 @@ var winCounter = 0;
 
 // DOM Manipulation
 var emptyLine = document.getElementById('empty-line');
+var showGuesLeft = document.getElementById('guess-left');
 var randomWord = animals[Math.floor(Math.random() * animals.length)];
 console.log(randomWord);
+
+showGuesLeft.textContent = 'Guesses left: ' + guessLeft;
 
 // Function to start the game
 function startGame() {
@@ -29,9 +32,6 @@ function startGame() {
   // Reset
   wrongLetter = [];
   guessLeft = 9;
-
-  // HTML
-  document.getElementById('guess-left').textContent = guessLeft;
 }
 
 function finishGame() {
@@ -59,6 +59,7 @@ document.onkeyup = function(event) {
   } else {
     wrongLetter.push(userGuess);
     guessLeft--;
+    showGuesLeft.innerHTML = 'Guesses left: ' + guessLeft;
     console.log(wrongLetter);
     finishGame();
   }
