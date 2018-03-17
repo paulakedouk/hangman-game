@@ -4,13 +4,11 @@ These apps will run in the browser, and feature dynamically updated HTML and CSS
 
 <img src="assets/images/hangman.gif" />
 
-## Overview
+## Built with:
 
-This is a classic Hangman Game.
-
-![](https://i.imgur.com/8QXRUXS.png)
-
-The Frontend uses HTML, CSS and JavaScript.
+* HTML
+* CSS
+* JavaScript
 
 Visit [this link](https://paulakedouk.github.io/hangman-game/) to play the game.
 
